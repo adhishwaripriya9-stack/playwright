@@ -9,6 +9,8 @@ test.describe('dynamic content - all cases', () => {
         await expect(page.getByRole('heading', { name: 'Dynamic Content' })).toBeVisible();
     });
 
+
+    
     test('2. verify content changes after refresh', async ({ page }) => {
         await page.goto(`${baseUrl}/dynamic_content`);
 
